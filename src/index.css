@@ -1,12 +1,61 @@
-span {
-    margin: 0px 2px;
-}
-
-article {
-    border: solid 1px;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .navbar {
+    background-color: #333;
+    padding: 1rem;
+  }
+  
+  .navbar a {
+    color: white;
+    margin-right: 15px;
+    text-decoration: none;
+  }
+  
+  .navbar a:hover {
+    text-decoration: underline;
+  }
+  
+  .navbar a.active {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
+  .movie-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .movie-card {
+    border: 1px solid #ddd;
+    padding: 1rem;
     border-radius: 5px;
-    margin: 5px;
-    max-width: 350px;
-    box-sizing: border-box;
-    padding: 5px;
-}
+  }
+  
+  .genre-tag {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 5px 10px;
+    background-color: #f0f0f0;
+    border-radius: 3px;
+  }
+  
+  .directors-container,
+  .actors-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .director-card,
+  .actor-card {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 5px;
+  }
